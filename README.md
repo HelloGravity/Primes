@@ -2,11 +2,7 @@ Primes class
 =========
 
 A simple C# class that provides prime numbers, in a List, and in a HashSet.
-The reason I added the HashSet, is because it has O(1) time complexity for 
-```C#
-.Contains
-```
-, and it uses less space than a simple boolean sieve array. 
+The reason I added the HashSet, is because it has O(1) time complexity for `.Contains()`, and it uses less space than a simple boolean sieve array. 
 
 The algorithm was taken from - 
 http://stackoverflow.com/questions/2068372/fastest-way-to-list-all-primes-below-n-in-python/3035188#3035188
@@ -14,7 +10,7 @@ and is ported to C#.
 
 
 Sample usage : 
-```C#
+```csharp
 HashSet<int> set = Primes.GetPrimesHashSet(100000);
 List<long> lst = Primes.GetPrimesList(1000000L);
 Console.WriteLine("There are " + lst.Count + " primes < 100000");
